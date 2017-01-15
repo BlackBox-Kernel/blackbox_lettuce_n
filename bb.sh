@@ -33,9 +33,9 @@ nocol='\033[0m'         # Default
 # Tweakable Options Below
 export ARCH=arm64
 export SUBARCH=arm64
-export KBUILD_BUILD_USER="kunalkene1797"
-export KBUILD_BUILD_HOST="Perilous-Beast"
-export CROSS_COMPILE=../projects/aarch64-linux-android-4.9-kernel/bin/aarch64-linux-android-strip/bin/aarch64-linux-android-
+export KBUILD_BUILD_USER="KunalKene1797"
+export KBUILD_BUILD_HOST="BlackBeast"
+export CROSS_COMPILE=../projects/aarch64-linux-android-4.9-kernel/bin/aarch64-linux-android-
 
 # Compilation Scripts Are Below
 compile_kernel ()
@@ -43,9 +43,8 @@ compile_kernel ()
 echo -e "$White***********************************************"
 echo "         Compiling BlackBox kernel             "
 echo -e "***********************************************$nocol"
-make cyanogenmod_lettuce-64_defconfig
-make menuconfig
-make -j4
+make lineageos_lettuce_defconfig
+make
 if ! [ -a $ZIMAGE ];
 then
 echo -e "$Red Kernel Compilation failed! Fix the errors! $nocol"
