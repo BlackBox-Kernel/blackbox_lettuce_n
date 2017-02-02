@@ -35,7 +35,7 @@ export ARCH=arm64
 export SUBARCH=arm64
 export KBUILD_BUILD_USER="KunalKene1797"
 export KBUILD_BUILD_HOST="BlackBeast"
-export CROSS_COMPILE=../projects/aarch64-linux-android-4.9-kernel/bin/aarch64-linux-android-
+export CROSS_COMPILE=../aarch64-linux-android-4.9-kernel/bin/aarch64-linux-android-
 
 # Compilation Scripts Are Below
 compile_kernel ()
